@@ -1,0 +1,25 @@
+<table class="table">
+	<tr>
+		<th>Id</th>
+		<th>Username</th>
+		<th>Password</th>
+		<th>Name</th>
+		<th>Address</th>
+		<th>Age</th>
+		<th>Email</th>
+		<th>PhoneNumber</th>
+		<th></th>
+	</tr>
+	<tr *ngFor="let user of users">
+		<td>{{user.id}}</td>
+		<td>{{user.username}}</td>
+		<td>{{user.password}}</td>
+		<td>{{user.name}}</td>
+		<td>{{user.address}}</td>
+		<td>{{user.age}}</td>
+		<td>{{user.email}}</td>
+		<td>{{user.phoneNumber}}</td>
+		<td><a class="btn btn-link" [routerLink]="['/edit', user.id]" routerLinkActive="active">Edit</a></td>
+		<td><button class="btn btn-link">Delete</button></td>
+	</tr>
+</table>

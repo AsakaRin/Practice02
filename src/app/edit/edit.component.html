@@ -1,0 +1,56 @@
+<!-- <div *ngFor="let user of users">{{user.id}}</div> -->
+	<!-- <th>Id</th>
+	<th>Username</th>
+	<th>Password</th>
+	<th>Name</th>
+	<th>Address</th>
+	<th>Age</th>
+	<th>Email</th>
+	<th>PhoneNumber</th>
+	<th></th> -->
+
+<div style="width: 1000px;">
+	<h2>Edit</h2>
+	<div class="row">
+		<label class="form-group col-2">
+			Id
+			<input class="form-control" type="text" name="id" [(ngModel)]="user.id">
+		</label>
+		<label class="form-group col-4">
+			Username
+			<input class="form-control" type="text" name="username" [(ngModel)]="user.username">
+		</label>
+	</div>
+	<div class="row">
+		<label class="form-group col-3">
+			Password
+			<input class="form-control" type="text" name="id" [(ngModel)]="user.password">
+		</label>
+		<label class="form-group col-3">
+			Name
+			<input class="form-control" type="text" name="id" [(ngModel)]="user.name">
+		</label>
+	</div>
+	<div class="row">
+		<label class="form-group col-5">
+			Address
+			<input class="form-control" type="text" name="id" [(ngModel)]="user.address">
+		</label>
+		<label class="form-group col-1">
+			Age
+			<input class="form-control" type="text" name="id" [(ngModel)]="user.age">
+		</label>
+	</div>
+	<div class="row">
+		<label class="form-group col-4">
+			Email
+		<input class="form-control" type="text" name="id" [(ngModel)]="user.email">
+		</label>
+		<label class="form-group col-2">
+			PhoneNumber
+		<input class="form-control" type="text" name="id" [(ngModel)]="user.phoneNumber">
+		</label>
+	</div>
+
+	<button class="btn btn-primary" (click)=UpdateUser()>Submit</button>
+</div>
